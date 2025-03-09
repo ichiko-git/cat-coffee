@@ -1,0 +1,233 @@
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+    sans-serif;
+  font-size: 15px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+ul {
+  margin: 0;
+}
+h1 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: antiquewhite; */
+}
+.header-logo {
+  max-width: 135px;
+}
+.header-nav {
+  text-align: right;
+}
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+.header-nav ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+.header-nav ul li a:hover {
+  text-decoration: underline;
+}
+/* メインビジュアル */
+#main-visual {
+  position: relative;
+  height: 400px;
+}
+#main-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #04414a;
+  color: #ffffff;
+  border-radius: 0 0 150px 0;
+  width: 100%;
+  height: 100%;
+  max-width: 620px;
+  z-index: 11;
+  align-content: center;
+}
+#main-message h1 {
+  font-size: 60px;
+  margin-left: 32px;
+}
+#main-message p {
+  font-size: 28px;
+  margin-left: 32px;
+}
+#main-visual img {
+  max-width: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+/* CONCEPT */
+.index-h2 {
+  margin-top: 40px;
+}
+.index-h2::after {
+  display: inline-block;
+  content: url(images/line.png);
+  margin-left: 10px;
+}
+#concept {
+  margin: 80px auto;
+}
+#concept-flex {
+  display: flex;
+  text-align: center;
+}
+.concept-item {
+  width: 50%;
+  margin: 20px;
+}
+h3 {
+  font-size: 27px;
+}
+.concept-photo {
+  width: 80%;
+}
+/* PRODUCT */
+#product {
+  background-color: #fafafa;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  padding: 10px 40px 0 40px;
+}
+#product-contents {
+  margin-top: 40px;
+  display: flex;
+}
+#product-left,
+#product-right {
+  width: 50%;
+  margin: 20px;
+}
+#product-right {
+  margin-top: 80px;
+}
+.product-item {
+  position: relative;
+  height: 480px;
+}
+#product-left .product-item {
+  margin-right: 20px;
+}
+#product-right .product-item {
+  margin-left: 20px;
+}
+.product-photo {
+  width: 100%;
+}
+.product-explain {
+  position: absolute;
+  bottom: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+.product-explain > span {
+  color: #04414a;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+.product-explain > h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.product-explain > p {
+  margin: 0;
+}
+/* COMPANY */
+#company {
+  margin: 80px auto;
+}
+#company-table {
+  width: 100%;
+}
+tr {
+  height: 100px;
+}
+.tableheader {
+  text-align: left;
+  padding: 20px;
+  border-bottom: 1px solid #04414a;
+  width: 100px;
+}
+.tableheader-first {
+  border-top: 1px solid #04414a;
+}
+.cell {
+  padding: 30px;
+  border-bottom: 1px solid #ececec;
+}
+.cell-first {
+  border-top: 1px solid #ececec;
+}
+/* フッター */
+footer {
+  background-color: #04414a;
+  text-align: center;
+  padding: 80px 80px 30px 80px;
+}
+#footer-logo {
+  margin-bottom: 30px;
+}
+#footer-link {
+  margin-bottom: 50px;
+}
+#footer-link a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px;
+}
+#footer-link a:hover {
+  text-decoration: underline;
+}
+#sns-footer {
+  text-align: left;
+  width: 100%;
+}
+#sns-footer a {
+  text-decoration: none;
+  margin-right: 30px;
+}
+#copyright {
+  float: right;
+  color: #ffffff;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  #main-visual {
+    position: static;
+    height: auto;
+    max-width: none;
+    width: 100%;
+  }
+  #main-message {
+    position: static;
+    border-radius: 0 0 0 0;
+    max-width: none;
+  }
+  #main-visual img {
+    position: static;
+    max-width: none;
+    width: 100%;
+  }
+}
