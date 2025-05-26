@@ -297,4 +297,27 @@ footer {
   .product-explain > h3 {
     margin: 10px 0;
   }
+
+  /* COMPANY */
+  #company-table {
+    margin-top: 20px;
+  }
+
+  /* フッター */
+  #footer-link {
+    margin-bottom: 30px;
+  }
+  #footer-link a {
+    font-size: 14px;
+  }
+  #sns-footer {
+    text-align: center;
+  }
+  #sns-footer a:nth-child(2) {
+    margin-right: 0;
+  }
+  #copyright {
+    float: none;
+    margin-top: 20px;
+  }
 }
